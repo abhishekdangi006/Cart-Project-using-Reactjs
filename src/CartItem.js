@@ -5,18 +5,26 @@ class CartItem extends React.Component{
         return(
             <div className='cart-item'>
                 <div className='left-block'>
-                    <img />
+                    <img style={styles.image}/>
                 </div>
                 <div className='right-block'>
-                    <div>Phone</div>
-                    <div>Rs 999</div>
-                    <div>Qty: 1</div>
+                    <div style={{fontSize:25}}>Phone</div>
+                    <div style={{color:'#777'}}>Rs 999</div>
+                    <div style={{color:'#777'}}>Qty: 1</div>
                     <div className='cart-item-actions'>
                         {/* Buttons*/}
                     </div>
                 </div>
             </div>
         )
+    }
+}
+const styles = {
+    image: {
+        height:110,
+        width:110,
+        borderRadius:4,
+        background: '#ccc' 
     }
 }
 
